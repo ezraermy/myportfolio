@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 body {
+  width: 375px;
+  height: 718px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #e5e5e5;
 }
 
@@ -40,7 +42,7 @@ body {
   background-repeat: no-repeat;
   background-position: -20px 80px;
   margin-bottom: 4rem;
-  padding: 40px 24px;
+  padding-top: 2.2rem;
 }
 
 .cover-socials a {
