@@ -1,37 +1,75 @@
+<a name="readme-top"></a>
+
+<div align="center">
+  <br/>
+
+  <h3><b>Portfolio README</b></h3>
+
+</div>
+
+<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [HTML](#tech-stack)
-    - [CSS](#key-features)
+- [💻 Getting Started](#getting-started)
 - [👥 Authors](#authors)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Hello_Microverse] <a name="about-project"></a>
+<!-- PROJECT DESCRIPTION -->
 
-**[Hello_Microverse]** is a simple project used to get to know with github and github flow.
+# 📖 [Ezra_Portfolio] <a name="about-project"></a>
+This project focuses on building a one-page responsive portfolio.
 
 ## 🛠 Built With <a name="built-with"></a>
 
-#### HTML <a name="tech-stack"></a>
+- HTML
+- CSS
+- Git, Github and Visual Studio Code
 
-#### CSS <a name="key-features"></a>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+> Describe how a new developer could make use of your project.
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+To get a local copy up and running follow these simple example steps.
+
+- Choose a directory
+- Open a Terminal
+- write: git clone https://github.com/ezraermy/ezra_portfolio/tree/portfolio_mobile_mainpage
+- get into to directory "portfolio_mobile_mainpage"
+- write: npm install
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- AUTHORS -->
 
-## 👤 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
-   - GitHub: [@ezraermy](https://github.com/)
-   - Twitter: [@ezraermy](https://twitter.com/)
-   - LinkedIn: [Ezra Yehuwalashet](https://linkedin.com/)
+> Mention all of the collaborators of this project.
 
+👤 **Ezra Yehuwalashet**
+
+- GitHub: [@ezraermy](https://github.com/)
+- Twitter: [@ezraermy](https://twitter.com/)
+- LinkedIn: [Ezra Yehuwalashet](https://linkedin.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -41,10 +79,13 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- SUPPORT -->
+
 ## ⭐️ Show your support <a name="support"></a>
 
+> Write a message to encourage readers to support your project
 
-If you like this project show your support
+If you like this project...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -52,11 +93,10 @@ If you like this project show your support
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank microverse teams
+> Give credit to everyone who inspired your codebase.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+I would like to thank...
+Abraham Christopher
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -65,3 +105,7 @@ I would like to thank microverse teams
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
