@@ -22,7 +22,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 [Ezra_Portfolio] <a name="about-project"></a>
-This project focuses on building a one-page responsive portfolio.
+This project focuses on building a responsive portfolio that show cases all of my successful projects and what I am capable of.
 
 ## 🛠 Built With <a name="built-with"></a>
 
