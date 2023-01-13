@@ -118,6 +118,11 @@ a:link {
 
 /* ///////// Projects ///////// */
 
+.container {
+  display: grid;
+  grid-template-columns: auto;
+}
+
 .work-page-left,
 .work-page-right {
   display: flex;
@@ -125,10 +130,16 @@ a:link {
   justify-content: center;
   box-sizing: border-box;
   padding: 8px;
-  margin: 0 1rem 4rem 1rem;
+  margin: 1rem 1rem 4rem 1rem;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
+}
+
+.card3-image,
+.card2-image,
+.card1-image {
+  margin: 1rem;
 }
 
 .work-title {
@@ -142,13 +153,13 @@ a:link {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 6px 0;
+  margin: 6px 1rem;
 }
 
 .clients {
   display: flex;
   flex-direction: row;
-  margin: 0;
+  margin: 0 1rem;
 }
 
 h4 {
@@ -167,7 +178,7 @@ h4 {
   font-size: 15px;
   line-height: 24px;
   color: #344563;
-  margin-top: 4px;
+  margin: 4px 1rem;
 }
 
 .project-detail {
@@ -187,11 +198,11 @@ h4 {
   letter-spacing: 0.04em;
   color: #396df2;
   background: #fff;
-  margin-bottom: 10px;
+  margin: 0.5rem 1rem 1.5rem;
 }
 
 .project-detail:hover {
-  background: #396df2;
+  background: #6070ff;
   color: #fff;
 }
 
@@ -214,17 +225,16 @@ div .taggs {
 .tag1 {
   width: 50px;
   height: 20px;
-  margin-right: 8px;
   border: none;
   border-radius: 6px;
-  margin-bottom: 20px;
+  margin: 1rem 0.3rem 1rem 1rem;
   color: #396df2;
 }
 
 .tag2 {
   width: 40px;
   height: 20px;
-  margin-right: 8px;
+  margin-right: 4px;
   border: none;
   border-radius: 6px;
   color: #396df2;
@@ -246,7 +256,7 @@ div .taggs {
   padding: 16px;
   background: #fff;
   border: 1px solid #dfe1e6;
-  border-radius: 16px;
+  border-top-right-radius: 5rem;
 }
 
 .about-myself-title {
@@ -316,7 +326,7 @@ div .taggs {
 }
 
 .resume:hover {
-  background: #396df2;
+  background: #6070ff;
   color: #fff;
 }
 
