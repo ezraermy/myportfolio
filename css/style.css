@@ -215,18 +215,13 @@ hr {
   margin: 1rem 3.5rem 1rem 3rem;
 }
 
-/* div .taggs {
+div .taggs {
   display: grid;
   grid-template-columns: 3.5rem 3rem 0.5rem;
   gap: 2px;
   padding-left: 1rem;
-} */
-.taggs {
-  padding-inline-start: 0;
 }
-.taggs > * {
-  float: left;
-}
+
 .tag1 {
   width: 50px;
   height: 20px;
@@ -234,6 +229,7 @@ hr {
   border-radius: 6px;
   margin-left: 0;
   color: #396df2;
+  font-size: 12px;
 }
 
 .tag2 {
@@ -243,15 +239,17 @@ hr {
   border: none;
   border-radius: 6px;
   color: #396df2;
+  font-size: 12px;
 }
 
 .tag3 {
-  width: 80px;
+  width: 60px;
   height: 20px;
   margin-right: 8px;
   border: none;
   border-radius: 6px;
   color: #396df2;
+  font-size: 12px;
 }
 
 /* ///////// About myself//////// */
@@ -360,4 +358,93 @@ hr {
   justify-content: space-between;
   padding: 0 0.5rem;
   margin: 1em;
+}
+
+/* Contact page */
+.contact {
+  width: 100%;
+  height: 740px;
+  background: #6070ff;
+  background-image: url(/images/contact/layers.svg);
+  background-size: 600px 750px;
+  background-repeat: no-repeat;
+  background-position-x: -70px;
+  background-position-y: 10px;
+  border-top-left-radius: 6rem;
+  padding-bottom: 5rem;
+}
+
+.contact-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  margin-top: 80px;
+  padding-top: 6rem;
+  margin-bottom: 0;
+}
+
+.contact-content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #ebebff;
+  padding: 0 1.5rem;
+}
+
+.my-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  gap: 1.3rem;
+}
+
+.inputField {
+  padding: 0.9rem;
+  border-radius: 10px;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.inputField:hover {
+  transform: translate(5px);
+}
+
+.textareaField {
+  border-radius: 10px;
+  padding: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.textareaField:hover {
+  transform: translate(5px);
+}
+
+.my-button {
+  align-items: center;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  color: #6070ff;
+  width: 50%;
+  border: none;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.shape {
+  margin-left: 30%;
+  background: #0d151e;
+  border-radius: 10px;
+  width: 134px;
+  height: 5px;
 }
