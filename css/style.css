@@ -459,11 +459,3 @@ div .taggs {
   font-weight: 500;
   cursor: pointer;
 }
-
-.shape {
-  margin-left: 30%;
-  background: #0d151e;
-  border-radius: 10px;
-  width: 134px;
-  height: 5px;
-}
