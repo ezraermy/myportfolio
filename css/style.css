@@ -33,6 +33,10 @@ body {
   cursor: pointer;
 }
 
+.navbar-menu {
+  display: none;
+}
+
 #main-page {
   display: flex;
   flex-direction: column;
@@ -143,6 +147,19 @@ a:link {
   margin: 1rem;
 }
 
+.card1-content,
+.card2-content,
+.card3-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card2-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .work-title {
   width: 295px;
   height: 36px;
@@ -151,13 +168,16 @@ a:link {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 6px 1rem;
+  margin: 10px 1rem;
 }
 
 .clients {
+  display: flex;
+  flex-direction: row;
+  margin: 25px 1rem 0;
+}
+
+.ptwo {
   display: flex;
   flex-direction: row;
   margin: 0 1rem;
@@ -179,7 +199,7 @@ h4 {
   font-size: 15px;
   line-height: 24px;
   color: #344563;
-  margin: 4px 1rem;
+  margin: 0 1rem;
 }
 
 .project-detail {
@@ -226,6 +246,7 @@ div .taggs {
   grid-template-columns: 3.5rem 3rem 0.5rem;
   gap: 2px;
   padding-left: 1rem;
+  margin: 0;
 }
 
 .tag1 {
@@ -481,12 +502,219 @@ div .taggs {
     flex-direction: column;
     justify-content: center;
     background: #fff;
-    background-image: url();
+    background-image: url(/images/desktop_main/Header.svg);
+    background-size: 1350px 600px;
     background-repeat: no-repeat;
-    background-position: -20px 80px;
+    background-position: -20px 70px;
     margin-bottom: 4rem;
-    padding: 40px 24px;
+    padding: 10px 24px;
   }
 
+  #navbar {
+    padding: 0 6rem;
+  }
+
+  .my-logo {
+    margin-top: 16px;
+  }
+
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+  }
+
+  .navbar-menu a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #344563;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+
+  .headline {
+    padding: 6rem 160px;
+  }
+
+  /* ////// Projects /////// */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-page-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    width: 80%;
+    background: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 2rem;
+  }
+
+  .card1-content,
+  .card3-content {
+    margin: 30px 20px 0 0;
+  }
+  .card2-content {
+    grid-row: 1/-2;
+    margin: 30px 20px 0 0;
+    padding-left: 15px;
+  }
+  
+  .work-title {
+    width: 100%;
+  }
+
+ 
+  .work-page-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    background: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 2rem;
+  }
+
+  .clients {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0 15px;
+    margin: 1px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7a869a;
+  }
+
+  div .taggs {
+    float: right;
+    width: 40px;
+    height: 20px;
+    padding-bottom: 20px;
+  }
+
+  .tag1 {
+    width: 50px;
+    height: 20px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    color: #396df2;
+  }
+
+  .tag2 {
+    width: 40px;
+    height: 20px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 6px;
+    color: #396df2;
+  }
+
+  .tag3 {
+    width: 80px;
+    height: 20px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 6px;
+    color: #396df2;
+  }
+
+  .about-myself {
+    width: 100%;
+    height: 496px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 5rem;
+    border-top-right-radius: 6rem;
+    margin: 4rem 0 0 0;
+  }
+
+  .about-myself-content {
+    width: 50%;
+    float: left;
+    padding-right: 2rem;
+  }
+
+  .about-myself-languages {
+    width: 50%;
+    float: right;
+  }
+
+  .about-myself-title {
+    padding: 1rem 0;
+  }
+
+  .frameworks {
+    display: flex;
+    padding: 0.5rem 0;
+  }
+
+  .framework1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .framework-skills-desktop {
+    display: flex;
+  }
+
+  .html-skill,
+  .css-skill {
+    margin-right: 1rem;
+  }
+
+  .framework-skills {
+    display: none;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    background-image: url(images/desktop_main/contact_desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+  }
+
+  .my-form {
+    padding: 0;
+  }
+
+  .footer-content {
+    width: 447px;
+  }
+
+  .my-button {
+    margin: auto;
+    padding: 12px;
+    background: #fff;
+    border-radius: 8px;
+    color: #6070ff;
+    width: 50%;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .shape {
+    display: none;
+  }
   
 }
