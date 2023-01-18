@@ -283,7 +283,7 @@ div .taggs {
 
 .about-myself {
   box-sizing: border-box;
-  padding: 16px;
+  padding: 1rem 1rem 8rem;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-top-right-radius: 5rem;
@@ -378,6 +378,10 @@ div .taggs {
   padding-left: 1rem;
 }
 
+.scroll {
+  display: none;
+}
+
 .framework-skills {
   display: flex;
   list-style: none;
@@ -385,11 +389,21 @@ div .taggs {
   padding: 0 0.5rem;
 }
 
+.framework-skills-desktop {
+  display: none;
+}
+
 .frameworks {
   display: flex;
   justify-content: space-between;
   padding: 0 0.5rem;
   margin: 1em;
+}
+
+.greater-tag {
+  margin-right: 2rem;
+  font-size: 1.2rem;
+  color: #ACB7C3;
 }
 
 /* Contact page */
@@ -404,6 +418,7 @@ div .taggs {
   background-position-y: 10px;
   border-top-left-radius: 6rem;
   padding-bottom: 4rem;
+  margin-top: -6rem;
 }
 
 .contact-title {
@@ -560,6 +575,16 @@ div .taggs {
     padding: 2rem;
   }
 
+  .work-page-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    background: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 2rem;
+  }
+
   .card1-content,
   .card3-content {
     margin: 30px 20px 0 0;
@@ -574,16 +599,18 @@ div .taggs {
     width: 100%;
   }
 
- 
-  .work-page-right {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 80%;
-    background: #fff;
-    border: none;
-    border-radius: 24px;
-    padding: 2rem;
+  .card1-image,
+  .card2-image,
+  .card3-image {
+    transition: transform 0.3s;
   }
+
+  .card1-image:hover,
+  .card2-image:hover,
+  .card3-image:hover {
+    transform: scale(1.07);
+  }
+
 
   .clients {
     display: flex;
@@ -633,35 +660,46 @@ div .taggs {
     color: #396df2;
   }
 
+  /* //////// About-myself-desktop//////// */
+
   .about-myself {
-    width: 100%;
-    height: 496px;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     background: #fff;
-    padding: 5rem;
     border-top-right-radius: 6rem;
-    margin: 4rem 0 0 0;
   }
 
   .about-myself-content {
-    width: 50%;
-    float: left;
-    padding-right: 2rem;
+    padding: 5rem 2rem 5rem 6.5rem;
   }
 
   .about-myself-languages {
-    width: 50%;
-    float: right;
+    padding: 2.5rem 3rem 5rem 0;
+    margin-top: 4rem;
   }
 
-  .about-myself-title {
-    padding: 1rem 0;
+  .languages {
+    padding-left: 0;
+    padding-bottom: 0.6rem;
+    color: #344563;
+  }
+
+  .scroll {
+    display: block;
+    position: absolute;
+    right: 140px;
+    font-size: 12px;
+  }
+
+  .framework-skills-desktop {
+    display: flex;
+    flex-direction: row;
   }
 
   .frameworks {
     display: flex;
-    padding: 0.5rem 0;
+    padding: 0.5rem 4rem 0.5rem 0;
   }
 
   .framework1 {
@@ -669,25 +707,35 @@ div .taggs {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+    color: #344563;
   }
 
-  .framework-skills-desktop {
-    display: flex;
+  hr {
+    margin-left: 1rem;
   }
 
   .html-skill,
   .css-skill {
-    margin-right: 1rem;
+    margin-right: 0.8rem;
   }
 
   .framework-skills {
     display: none;
   }
 
+  .greater-tag {
+    margin-right: 0;
+  }
+  
+
+  /* //////// Contact ///////// */
+
   .contact {
+    width: 100%;
+    grid-column: 1/-1;
     display: flex;
     justify-content: center;
-    background-image: url(images/desktop_main/contact_desktop.svg);
+    background-image: url(/images/desktop_main/contact_desktop.svg);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
@@ -707,7 +755,7 @@ div .taggs {
     background: #fff;
     border-radius: 8px;
     color: #6070ff;
-    width: 50%;
+    width: 160px;
     border: none;
     font-size: 17px;
     font-weight: 500;
@@ -716,5 +764,4 @@ div .taggs {
   .shape {
     display: none;
   }
-  
 }
