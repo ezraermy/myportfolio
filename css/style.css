@@ -464,10 +464,29 @@ div .taggs {
   color: #fff;
 }
 
-.shape {
-  margin-left: 30%;
-  background: #0d151e;
-  border-radius: 10px;
-  width: 134px;
-  height: 5px;
+@media screen and (min-width: 768px) {
+  body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: #e5e5e5;
+  }
+
+  #main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: -20px 80px;
+    margin-bottom: 4rem;
+    padding: 40px 24px;
+  }
+
+  
 }
