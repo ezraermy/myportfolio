@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+*{
+  left: 0;
+}
+
 body {
   width: 375px;
   height: 100%;
@@ -378,10 +382,6 @@ div .taggs {
   padding-left: 1rem;
 }
 
-.scroll {
-  display: none;
-}
-
 .framework-skills {
   display: flex;
   list-style: none;
@@ -513,24 +513,31 @@ div .taggs {
   }
 
   #main-page {
+    left: 0;
+    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: #fff;
     background-image: url(/images/desktop_main/Header.svg);
-    background-size: 1350px 600px;
+    background-size: 97%;
     background-repeat: no-repeat;
-    background-position: -20px 70px;
+    background-position: 20px 80px;
     margin-bottom: 4rem;
     padding: 10px 24px;
   }
 
   #navbar {
-    padding: 0 6rem;
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    margin-left: 8px;
   }
 
   .my-logo {
-    margin-top: 16px;
+    margin: 16px 0 0 100px;
   }
 
   .navbar-menu {
@@ -538,6 +545,7 @@ div .taggs {
     align-items: center;
     list-style: none;
     gap: 1rem;
+    margin-right: 10%;
   }
 
   .navbar-menu a {
@@ -554,7 +562,8 @@ div .taggs {
   }
 
   .headline {
-    padding: 6rem 160px;
+    padding: 350px 260px 255px;
+    margin-top: 20px;
   }
 
   /* ////// Projects /////// */
@@ -562,6 +571,7 @@ div .taggs {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem 0;
   }
 
   .work-page-left {
@@ -683,13 +693,6 @@ div .taggs {
     padding-left: 0;
     padding-bottom: 0.6rem;
     color: #344563;
-  }
-
-  .scroll {
-    display: block;
-    position: absolute;
-    right: 140px;
-    font-size: 12px;
   }
 
   .framework-skills-desktop {
