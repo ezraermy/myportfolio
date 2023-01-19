@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-*{
+* {
   left: 0;
 }
 
@@ -72,10 +72,6 @@ body {
 
 a:link {
   text-decoration: none;
-}
-
-.navbar-menu {
-  display: none;
 }
 
 #navbar .navbar-menu a:hover {
@@ -403,7 +399,7 @@ div .taggs {
 .greater-tag {
   margin-right: 2rem;
   font-size: 1.2rem;
-  color: #ACB7C3;
+  color: #acb7c3;
 }
 
 /* Contact page */
@@ -530,9 +526,9 @@ div .taggs {
   #navbar {
     overflow: hidden;
     background-color: #fff;
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
+    position: fixed;
+    top: 0;
+    width: 100%;
     margin-left: 8px;
   }
 
@@ -556,7 +552,7 @@ div .taggs {
     text-decoration: none;
     color: #344563;
   }
-  
+
   .hamburger {
     display: none;
   }
@@ -599,12 +595,13 @@ div .taggs {
   .card3-content {
     margin: 30px 20px 0 0;
   }
+
   .card2-content {
     grid-row: 1/-2;
     margin: 30px 20px 0 0;
     padding-left: 15px;
   }
-  
+
   .work-title {
     width: 100%;
   }
@@ -620,7 +617,6 @@ div .taggs {
   .card3-image:hover {
     transform: scale(1.07);
   }
-
 
   .clients {
     display: flex;
@@ -729,7 +725,7 @@ div .taggs {
   .greater-tag {
     margin-right: 0;
   }
-  
+
 
   /* //////// Contact ///////// */
 
