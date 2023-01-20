@@ -5,7 +5,7 @@
 }
 
 body {
-  width: 375px;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -46,9 +46,10 @@ body {
   flex-direction: column;
   justify-content: center;
   background: #fff;
-  background-image: url(/images/backgound_image.svg);
+  background-image: url(/images/Background_image.png);
+  height: auto;
   background-repeat: no-repeat;
-  background-position: -20px 80px;
+  background-position: 125% 99%;
   margin-bottom: 4rem;
   padding-top: 2.2rem;
 }
@@ -407,11 +408,10 @@ div .taggs {
   width: 100%;
   height: 740px;
   background: #6070ff;
-  background-image: url(/images/contact/layers.svg);
-  background-size: 600px 750px;
+  background-image: url(/images/contact/Layers.png);
+  height: auto;
   background-repeat: no-repeat;
-  background-position-x: -70px;
-  background-position-y: 10px;
+  background-position: 108% 43%;
   border-top-left-radius: 6rem;
   padding-bottom: 4rem;
   margin-top: -6rem;
@@ -496,6 +496,18 @@ div .taggs {
   color: #fff;
 }
 
+@media screen and (min-width: 500px){
+  #main-page {
+    background-image: url(/images/desktop_main/Header.png);
+    background-size: 100%;
+  }
+
+  .contact {
+    background-image: url(/images/desktop_main/Contact_desktop.png);
+    background-size: 80%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   body {
     width: 100%;
@@ -515,12 +527,13 @@ div .taggs {
     flex-direction: column;
     justify-content: center;
     background: #fff;
-    background-image: url(/images/desktop_main/Header.svg);
+    background-image: url(/images/desktop_main/Header.png);
     background-size: 97%;
     background-repeat: no-repeat;
-    background-position: 20px 80px;
+    background-position: center;
     margin-bottom: 4rem;
     padding: 10px 24px;
+    border-bottom-left-radius: 80px;
   }
 
   #navbar {
@@ -558,7 +571,7 @@ div .taggs {
   }
 
   .headline {
-    padding: 350px 260px 255px;
+    padding: 350px 15% 255px;
     margin-top: 20px;
   }
 
@@ -591,11 +604,6 @@ div .taggs {
     padding: 2rem;
   }
 
-  .card1-content,
-  .card3-content {
-    margin: 30px 20px 0 0;
-  }
-
   .card2-content {
     grid-row: 1/-2;
     margin: 30px 20px 0 0;
@@ -604,12 +612,17 @@ div .taggs {
 
   .work-title {
     width: 100%;
+    margin-bottom: 0;
   }
 
   .card1-image,
   .card2-image,
   .card3-image {
     transition: transform 0.3s;
+  }
+
+  .card2-image {
+    padding-top: 30px;
   }
 
   .card1-image:hover,
@@ -622,8 +635,6 @@ div .taggs {
     display: flex;
     flex-direction: row;
     list-style: none;
-    padding: 0 15px;
-    margin: 1px;
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
@@ -670,7 +681,7 @@ div .taggs {
 
   .about-myself {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
     grid-template-rows: auto;
     background: #fff;
     border-top-right-radius: 6rem;
@@ -733,7 +744,7 @@ div .taggs {
     grid-column: 1/-1;
     display: flex;
     justify-content: center;
-    background-image: url(/images/desktop_main/contact_desktop.svg);
+    background-image: url(/images/desktop_main/Contact_desktop.png);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
