@@ -163,7 +163,7 @@ a:link {
 
 .work-title {
   width: 295px;
-  height: 36px;
+  height: auto;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -175,7 +175,7 @@ a:link {
 .clients {
   display: flex;
   flex-direction: row;
-  margin: 25px 1rem 0;
+  margin: 0 1rem 0;
 }
 
 .ptwo {
@@ -401,6 +401,12 @@ div .taggs {
   margin-right: 2rem;
   font-size: 1.2rem;
   color: #acb7c3;
+}
+
+.down-arrow-tag {
+  font-size: 1.2rem;
+  color: #acb7c3;
+  transform: rotate(90deg);
 }
 
 /* Contact page */
