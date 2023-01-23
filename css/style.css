@@ -26,7 +26,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: #6070ff;
+  color: #1A5FB4;
   animation: logoAnimate 3s alternate-reverse 3s 2;
 }
 
@@ -105,7 +105,7 @@ a:link {
 
 .cover-links {
   margin-bottom: 10px;
-  color: #7f8cff;
+  color: #1C71D8;
   height: 24px;
   font-style: normal;
   font-weight: 500;
@@ -256,7 +256,7 @@ div .taggs {
   border: none;
   border-radius: 6px;
   margin-left: 0;
-  color: #396df2;
+  color: #1A5FB4;
   font-size: 12px;
 }
 
@@ -266,7 +266,7 @@ div .taggs {
   margin-right: 4px;
   border: none;
   border-radius: 6px;
-  color: #396df2;
+  color: #1A5FB4;
   font-size: 12px;
 }
 
@@ -276,7 +276,7 @@ div .taggs {
   margin-right: 8px;
   border: none;
   border-radius: 6px;
-  color: #396df2;
+  color: #1A5FB4;
   font-size: 12px;
 }
 
@@ -321,7 +321,7 @@ div .taggs {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #1A5FB4;
   margin-bottom: 1px;
   padding-left: 0.5rem;
 }
@@ -400,12 +400,12 @@ div .taggs {
 .greater-tag {
   margin-right: 2rem;
   font-size: 1.2rem;
-  color: #acb7c3;
+  color: #65778B;
 }
 
 .down-arrow-tag {
   font-size: 1.2rem;
-  color: #acb7c3;
+  color: #607A85;
   transform: rotate(90deg);
 }
 
@@ -483,7 +483,7 @@ div .taggs {
   padding: 12px;
   background: #fff;
   border-radius: 8px;
-  color: #6070ff;
+  color: #5263FF;
   width: 50%;
   border: none;
   font-size: 17px;
@@ -661,7 +661,7 @@ div .taggs {
     border: none;
     border-radius: 6px;
     margin-bottom: 20px;
-    color: #396df2;
+    color: #1A5FB4;
   }
 
   .tag2 {
@@ -670,7 +670,7 @@ div .taggs {
     margin-right: 8px;
     border: none;
     border-radius: 6px;
-    color: #396df2;
+    color: #1A5FB4;
   }
 
   .tag3 {
@@ -679,7 +679,7 @@ div .taggs {
     margin-right: 8px;
     border: none;
     border-radius: 6px;
-    color: #396df2;
+    color: #1A5FB4;
   }
 
   /* //////// About-myself-desktop//////// */
@@ -768,7 +768,7 @@ div .taggs {
     padding: 12px;
     background: #fff;
     border-radius: 8px;
-    color: #6070ff;
+    color: #5263FF;
     width: 160px;
     border: none;
     font-size: 17px;
