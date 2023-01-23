@@ -62,9 +62,6 @@
 
 - [Live Demo Link](https://yourdeployedapplicationlink.com)
 
-## 🌐 Online version
-- [Ezra-Portfolio](https://ezraermy.github.io/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
