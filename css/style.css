@@ -103,6 +103,60 @@ body {
   padding-top: 2.2rem;
 }
 
+/* DETAIL PAGE  */
+
+.popup {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  position: sticky;
+  background: #fff;
+  top: 20px;
+  padding: 1rem;
+  margin: 2rem 0.8rem;
+  border-radius: 10px;
+  height: 90vh;
+  z-index: 2;
+}
+
+.close {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 50px;
+  left: 80%;
+}
+
+.popup.show {
+  display: flex;
+  transition-delay: 2s;
+}
+
+.popup-button {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.pop-button {
+  width: 130px !important;
+  font-size: 12px;
+  gap: 6px;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.popup-text {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #344563;
+}
+
+/* DETAIL PAGE  */
+
 .cover-socials a {
   text-decoration: none;
   font-size: 22px;
