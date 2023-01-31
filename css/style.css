@@ -59,7 +59,7 @@ body {
 }
 
 .hamburger > .closeIcon {
-  background-color: #6070ff;
+  background: none;
   color: white;
 }
 
@@ -72,7 +72,7 @@ body {
   right: 0;
   bottom: 0;
   height: 100vh;
-  background: #6070ff;
+  background: rgb(96, 112, 255, 0.8);
   color: white;
   list-style: none;
   padding-top: 4rem;
