@@ -67,7 +67,7 @@ for (let i = 0; i < appProjects.length; i += 1) {
 
 const popupDetail = document.querySelector('#card4-page');
 popupDetail.innerHTML = `
-     <div class="close"><img src="images/Icon.svg" alt="icon for the popup widnow"></div>
+     <div class="close"><img src="images/Icon.png" alt="icon for the popup widnow"></div>
       <h3 class="popup-title"></h3>
       <div class="clients detail-tech">
         <h4>CANOPY</h4>
