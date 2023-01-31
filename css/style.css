@@ -17,6 +17,7 @@ body {
 
 #navbar {
   display: flex;
+  position: fixed;
   justify-content: space-between;
   padding: 0 24px;
 }
@@ -30,15 +31,64 @@ body {
   animation: logoAnimate 3s alternate-reverse 3s 2;
 }
 
-.hamburger {
-  border: none;
-  background: white;
-  color: #6070ff;
-  cursor: pointer;
+/* Mobile-menu dom manipulation */
+
+.menuItem {
+  display: block;
+  margin: 2rem 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
 }
 
-.navbar-menu {
+.menuItem:hover {
+  text-decoration: underline;
+}
+
+.hamburger {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  color: #6070ff;
+  cursor: pointer;
+  padding-left: 16rem;
+}
+
+.closeIcon {
   display: none;
+}
+
+.hamburger > .closeIcon {
+  background: none;
+  color: white;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  background: rgb(96, 112, 255, 0.8);
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+  backdrop-filter: blur(5px);
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.showMenu {
+  top: -1%;
+  transform: translateY(0);
+  color: #fff;
 }
 
 #main-page {
@@ -75,7 +125,7 @@ a:link {
   text-decoration: none;
 }
 
-#navbar .navbar-menu a:hover {
+#navbar .desktop-menu a:hover {
   color: #396df2;
   font-weight: 700;
   cursor: pointer;
@@ -554,7 +604,7 @@ div .taggs {
     margin: 16px 0 0 100px;
   }
 
-  .navbar-menu {
+  .desktop-menu {
     display: flex;
     align-items: center;
     list-style: none;
@@ -562,7 +612,7 @@ div .taggs {
     margin-right: 10%;
   }
 
-  .navbar-menu a {
+  .desktop-menu a {
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
