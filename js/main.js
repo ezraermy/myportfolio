@@ -100,9 +100,14 @@ const popBg = document.querySelector('.popup-background');
 
 const pop = document.querySelector('.popup');
 
+const html = document.querySelector('html')
+
+const hide = document.querySelector('hide')
+
 function showPopup() {
   popBg.classList.add('show');
   pop.classList.add('show');
+  html.classList.add('scroll-stop');
 }
 
 const card1 = document.querySelector('#card0-btn');
@@ -142,6 +147,7 @@ const close = document.querySelector('.close');
 close.addEventListener('click', () => {
   popBg.classList.remove('show');
   pop.classList.remove('show');
+  html.classList.remove('scroll-stop');
 });
 
 function toggleMenu() {
@@ -163,3 +169,19 @@ menuItems.forEach(
     menuItem.addEventListener('click', toggleMenu);
   },
 );
+
+const email = document.querySelector('#email');
+const form = document.querySelector('.my-form');
+const error = email.nextElementSibling;
+const pattern = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+
+form.addEventListener('submit', (event) => {
+  const isValid = pattern.test(email.value);
+  if (!isValid) {
+    error.textContent = 'Please enter the email in lowercase.';
+    error.style.color = 'red';
+    event.preventDefault();
+  } else {
+    error.textContent = '';
+  }
+});
