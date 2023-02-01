@@ -9,31 +9,31 @@ const appProjects = [
     title: 'First Project',
     picture: 'images/works/tonic/Cover1.svg',
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley',
-    tech1: 'HTML',
-    tech2: 'CSS',
-    tech3: 'JavaScript',
-    live: '<a href="https://www.google.com">See Live <img src="images/Live.png" alt=""></a>',
-    source: '<a href="https://www.google.com">See Source <img src="images/Vector.png" alt=""></a>',
+    tech1: 'html',
+    tech2: 'css',
+    tech3: 'javascript',
+    live: '<a href="https://www.google.com">See Live <img src="images/live.svg" alt=""></a>',
+    source: '<a href="https://www.google.com">See Source <img src="images/Vector.svg" alt=""></a>',
   },
   {
     title: 'Second Project',
     picture: 'images/works/multi_post_story/Cover.svg',
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley',
-    tech1: 'HTML',
-    tech2: 'CSS',
-    tech3: 'JavaScript',
-    live: '<a href="#">See Live <img src="images/Live.png" alt=""></a>',
-    source: '<a href="#">See Source <img src="images/Vector.png" alt=""></a>',
+    tech1: 'html',
+    tech2: 'css',
+    tech3: 'javascript',
+    live: '<a href="#">See Live <img src="images/live.svg" alt=""></a>',
+    source: '<a href="#">See Source <img src="images/Vector.svg" alt=""></a>',
   },
   {
     title: 'Third Project',
     picture: 'images/works/tonic/Cover1.svg',
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley',
-    tech1: 'HTML',
-    tech2: 'CSS',
-    tech3: 'JavaScript',
-    live: '<a href="#">See Live <img src="images/Live.png" alt=""></a>',
-    source: '<a href="#">See Source <img src="images/Vector.png" alt=""></a>',
+    tech1: 'html',
+    tech2: 'css',
+    tech3: 'javascript',
+    live: '<a href="#">See Live <img src="images/live.svg" alt=""></a>',
+    source: '<a href="#">See Source <img src="images/Vector.svg" alt=""></a>',
   },
 ];
 
@@ -71,7 +71,7 @@ const popupDetail = document.querySelector('#card4-page');
 popupDetail.innerHTML = `
      <div class = "close"><img src="images/Icon.svg" alt="icon for the popup widnow"></div>
       <h3 class="popup-title"></h3>
-      <div class="clients detail-tech">
+      <div class="detail-tech">
         <h4>CANOPY</h4>
         <img class="img-clients" src="images/works/Counter.svg" alt="">
         <h4 style="color: #6b778c">Back End Dev</h4>
@@ -90,8 +90,8 @@ popupDetail.innerHTML = `
             <button class="tag3 pop-tag3">${appProjects[0].tech3}</button>
           </div>
           <div class="popup-button">
-            <button class="project-detail live-button"></button>
-            <button class="project-detail source-button"></button>
+            <button class="project-detail-popup live-button"></button>
+            <button class="project-detail-popup source-button"></button>
           </div>
         </div>  
       </div>`;
