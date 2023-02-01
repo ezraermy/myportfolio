@@ -112,11 +112,11 @@ body {
   justify-content: center;
   position: sticky;
   background: #fff;
-  top: 20px;
-  padding: 1rem;
+  top: 0;
+  padding: 1rem 1rem;
   margin: 2rem 0.8rem;
   border-radius: 10px;
-  height: 90vh;
+  height: 100%;
   z-index: 2;
 }
 
@@ -177,6 +177,11 @@ body {
 
 a:link {
   text-decoration: none;
+}
+
+.source-button a,
+.live-button a {
+  color: #6070ff !important;
 }
 
 #navbar .desktop-menu a:hover {
@@ -257,7 +262,6 @@ a:link {
 .card3-content {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .card2-content {
@@ -265,7 +269,7 @@ a:link {
   flex-direction: column;
 }
 
-.work-title {
+.work1-title {
   width: 295px;
   height: auto;
   font-style: normal;
@@ -300,7 +304,7 @@ h4 {
   padding: 5px;
 }
 
-.highlights {
+.project1-content {
   font-size: 15px;
   line-height: 24px;
   color: #344563;
@@ -316,7 +320,7 @@ h4 {
   cursor: pointer;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 24px;
   display: flex;
   align-items: center;
@@ -359,7 +363,7 @@ div .taggs {
   height: 20px;
   border: none;
   border-radius: 6px;
-  margin-left: 0;
+  margin: 14px 0;
   color: #1a5fb4;
   font-size: 12px;
 }
@@ -367,7 +371,7 @@ div .taggs {
 .tag2 {
   width: 40px;
   height: 20px;
-  margin-right: 4px;
+  margin: 14px 4px 0 0;
   border: none;
   border-radius: 6px;
   color: #1a5fb4;
@@ -375,13 +379,13 @@ div .taggs {
 }
 
 .tag3 {
-  width: 60px;
+  width: 71px;
   height: 20px;
-  margin-right: 8px;
+  margin: 12px 8px 0 0;
   border: none;
   border-radius: 6px;
   color: #1a5fb4;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* ///////// About myself//////// */
@@ -605,6 +609,13 @@ div .taggs {
   color: #fff;
 }
 
+#project-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 500px) {
   #main-page {
     background-image: url(/images/desktop_main/Header.png);
@@ -785,6 +796,80 @@ div .taggs {
     border-radius: 6px;
     color: #1a5fb4;
   }
+
+  /* DETAIL PAGE  */
+
+  .popup {
+    top: 20px;
+    width: 50%;
+    padding: 1rem;
+    margin: 2rem 0.8rem;
+    border-radius: 10px;
+    background: #fff;
+  }
+
+  .close {
+    top: 1rem;
+    left: 90%;
+  }
+
+  .popup-image {
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+  }
+
+  .card-popup-content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+  }
+
+  .popup-btn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+
+  .source-button,
+  .live-button {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .popup-detail-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pop-button {
+    width: 120px;
+    font-size: 12px;
+    gap: 6px;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  .popup-background {
+    display: none;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -1;
+  }
+
+  .popup-background.show {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+  }
+
+  /* DETAIL PAGE  */
 
   /* //////// About-myself-desktop//////// */
 

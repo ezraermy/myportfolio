@@ -12,8 +12,8 @@ const appProjects = [
     tech1: 'HTML',
     tech2: 'CSS',
     tech3: 'JavaScript',
-    live: '<a href="https://www.google.com">See Live <img src="images/live.svg" alt=""></a>',
-    source: '<a href="https://www.google.com">See Source <img src="images/Vector.svg" alt=""></a>',
+    live: '<a href="https://www.google.com">See Live <img src="images/Live.png" alt=""></a>',
+    source: '<a href="https://www.google.com">See Source <img src="images/Vector.png" alt=""></a>',
   },
   {
     title: 'Second Project',
@@ -22,8 +22,8 @@ const appProjects = [
     tech1: 'HTML',
     tech2: 'CSS',
     tech3: 'JavaScript',
-    live: '<a href="#">See Live <img src="images/live.svg" alt=""></a>',
-    source: '<a href="#">See Source <img src="images/Vector.svg" alt=""></a>',
+    live: '<a href="#">See Live <img src="images/Live.png" alt=""></a>',
+    source: '<a href="#">See Source <img src="images/Vector.png" alt=""></a>',
   },
   {
     title: 'Third Project',
@@ -32,8 +32,8 @@ const appProjects = [
     tech1: 'HTML',
     tech2: 'CSS',
     tech3: 'JavaScript',
-    live: '<a href="#">See Live <img src="images/live.svg" alt=""></a>',
-    source: '<a href="#">See Source <img src="images/Vector.svg" alt=""></a>',
+    live: '<a href="#">See Live <img src="images/Live.png" alt=""></a>',
+    source: '<a href="#">See Source <img src="images/Vector.png" alt=""></a>',
   },
 ];
 
@@ -54,9 +54,11 @@ for (let i = 0; i < appProjects.length; i += 1) {
         <h4 style="color: #6b778c">2015</h4>
       </div>
       <p class="project1-content">${appProjects[i].content}</p> 
-      <button class="tag1">${appProjects[i].tech1}</button>
-      <button class="tag2">${appProjects[i].tech2}</button>
-      <button class="tag3">${appProjects[i].tech3}</button>
+      <div class="taggs">
+        <button class="tag1">${appProjects[i].tech1}</button>
+        <button class="tag2">${appProjects[i].tech2}</button>
+        <button class="tag3">${appProjects[i].tech3}</button>
+      </div>
     
       <button id="card${i}-btn" class="project-detail">See Project</button>
   </div>
@@ -67,7 +69,7 @@ for (let i = 0; i < appProjects.length; i += 1) {
 
 const popupDetail = document.querySelector('#card4-page');
 popupDetail.innerHTML = `
-     <div class="close"><img src="images/Icon.png" alt="icon for the popup widnow"></div>
+     <div class = "close"><img src="images/Icon.svg" alt="icon for the popup widnow"></div>
       <h3 class="popup-title"></h3>
       <div class="clients detail-tech">
         <h4>CANOPY</h4>
