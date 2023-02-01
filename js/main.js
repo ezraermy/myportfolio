@@ -9,19 +9,15 @@ const appProjects = [
     title: 'First Project',
     picture: 'images/works/tonic/Cover1.svg',
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley',
-    tech1: 'html',
-    tech2: 'css',
-    tech3: 'javascript',
-    live: '<a href="https://www.google.com">See Live <img src="images/live.svg" alt=""></a>',
-    source: '<a href="https://www.google.com">See Source <img src="images/Vector.svg" alt=""></a>',
+    tech: ['html', 'css', 'javascript'],
+    live: '<a href="https://www.link_to_live_version.com"> See Live <img src="images/live.svg" alt="">',
+    source: '<a href="https://www.link_to_source_version.com">See Source <img src="images/Vector.svg" alt=""></a>',
   },
   {
     title: 'Second Project',
     picture: 'images/works/multi_post_story/Cover.svg',
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley',
-    tech1: 'html',
-    tech2: 'css',
-    tech3: 'javascript',
+    tech: ["html", "css", "javascript"],
     live: '<a href="#">See Live <img src="images/live.svg" alt=""></a>',
     source: '<a href="#">See Source <img src="images/Vector.svg" alt=""></a>',
   },
@@ -29,9 +25,7 @@ const appProjects = [
     title: 'Third Project',
     picture: 'images/works/tonic/Cover1.svg',
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley',
-    tech1: 'html',
-    tech2: 'css',
-    tech3: 'javascript',
+    tech: ["html", "css", "javascript"],
     live: '<a href="#">See Live <img src="images/live.svg" alt=""></a>',
     source: '<a href="#">See Source <img src="images/Vector.svg" alt=""></a>',
   },
@@ -55,9 +49,9 @@ for (let i = 0; i < appProjects.length; i += 1) {
       </div>
       <p class="project1-content">${appProjects[i].content}</p> 
       <div class="taggs">
-        <button class="tag1">${appProjects[i].tech1}</button>
-        <button class="tag2">${appProjects[i].tech2}</button>
-        <button class="tag3">${appProjects[i].tech3}</button>
+        <button class="tag1">${appProjects[i].tech[0]}</button>
+        <button class="tag2">${appProjects[i].tech[1]}</button>
+        <button class="tag3">${appProjects[i].tech[2]}</button>
       </div>
     
       <button id="card${i}-btn" class="project-detail">See Project</button>
@@ -85,9 +79,9 @@ popupDetail.innerHTML = `
         <p class="highlights popup-text"></p> 
         <div class="popup-detail-buttons">
           <div class="popup-btn">
-            <button class="tag1 pop-tag1">${appProjects[0].tech1}</button>
-            <button class="tag2 pop-tag2">${appProjects[0].tech2}</button>
-            <button class="tag3 pop-tag3">${appProjects[0].tech3}</button>
+            <button class="tag1 pop-tag1">${appProjects[0].tech[0]}</button>
+            <button class="tag2 pop-tag2">${appProjects[0].tech[1]}</button>
+            <button class="tag3 pop-tag3">${appProjects[0].tech[2]}</button>
           </div>
           <div class="popup-button">
             <button class="project-detail-popup live-button"></button>
