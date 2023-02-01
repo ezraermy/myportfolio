@@ -43,6 +43,7 @@
   <ul>
     <li><a href="https://html.com/">html</a></li>
     <li><a href="https://www.w3schools.com/css/">css</a></li>
+    <li><a href="https://www.javascripttutorial.net/">javascript</a></li>
   </ul>
 </details>
 
@@ -101,7 +102,8 @@ Install this project with linters:
 - On the terminal run npm install --save-dev hint@7.x
 - Copy .hintrc to the root directory of your project.
 - Run npx hint .
-- Fix validation errors.
+- Run npx eslint .
+- Fix linter errors.
 
 ### Usage
 
