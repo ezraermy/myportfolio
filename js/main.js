@@ -97,7 +97,6 @@ popupDetail.innerHTML = `
       </div>`;
 
 const popBg = document.querySelector('.popup-background');
-
 const pop = document.querySelector('.popup');
 
 function showPopup() {
