@@ -172,7 +172,7 @@ menuItems.forEach(
 
 const email = document.querySelector('#email');
 const form = document.querySelector('.my-form');
-const error = email.nextElementSibling;
+const error = document.querySelector('#error');
 const pattern = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
 
 form.addEventListener('submit', (event) => {
