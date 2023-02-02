@@ -11,6 +11,11 @@
     <title>Portfolio home page</title>
   </head>
 <body>
+
+<!--detail popup page -->
+<div class="popup-background"></div>
+<section id="card4-page" class="popup"></section>
+
 <!-- Main page section -->
 <section id="main-page">
   <header>
@@ -50,98 +55,12 @@
     </ul>
   </section>
 </section>
-<section class="container">
-    <!-- First Project -->
-  <section id="card-page" class="work-page-left">
-    <div class="card1-image">
-      <img src="images/works/tonic/Cover1.svg" alt="Poster for multi-post story app" style="width: 100%;" />
-    </div>
-    <div class="card1-content">
-        <h3 class="work-title">Multy-Post Stories</h3>
-        <div class="clients">
-          <h4>CANOPY</h4>
-          <img class="img-clients" src="images/works/Counter.svg" alt="">
-          <h4 style="color: #6b778c;">Back End Dev</h4>
-          <img class="img-clients" src="images/works/Counter.svg" alt="">
-          <h4 style="color: #6b778c">2015</h4>
-        </div>
-        <p class="highlights">
-          Exploring the future of media in Facebook's first Virtual Reality app; a place
-          to discover and enjoy 360 photos and videos on Gear VR.
-        </p>   
 
-        <ul class="taggs" style="list-style: none;">
-          <li><button class="tag1">html</button></li>
-          <li><button class="tag2">css</button></li>
-          <li><button class="tag3">javascript</button></li>
-        </ul> 
-        <button class="project-detail btn">See Project</button>
-    </div>
-  </section>
- 
-  <!-- Second project -->
-  <section class="work-page-right">
-    <div class="card2-image">
-      <img
-      src="images/works/multi_post_story/Cover.svg"
-      alt="Poster for Tonic app"
-      style="width: 100%;"
-    />
-    </div>
-    <div class="card2-content">
-      <h3 class="work-title">Tonic</h3>
-      <div class="clients ptwo">
-        <h4>CANOPY</h4>
-        <img class="img-clients" src="images/works/Counter.svg" alt="">
-        <h4 style="color: #6b778c">Back End Dev</h4>
-        <img class="img-clients" src="images/works/Counter.svg" alt="">
-        <h4 style="color: #6b778c">2015</h4>
-      </div>
-        <p class="highlights">
-          Experimental content creation feature that allows 
-          users to add to an existing story over the course of a day without spamming 
-          their friends.
-        </p>
+<!-- Project section  -->
+<section id="project-section">
+   
+</section> 
 
-        <ul class="taggs" style="list-style: none;">
-          <li><button class="tag1">html</button></li>
-          <li><button class="tag2">css</button></li>
-          <li><button class="tag3">javascript</button></li>
-        </ul>  
-
-        <button class="project-detail btn">See Project</button>
-    </div>
-  </section>
-
-    <!-- Third project -->
-  <section class="work-page-left">
-   <div class="card3-image">
-    <img src="images/works/tonic/Cover1.svg" alt="Poster for multi-post story app" style="width: 100%;" />
-   </div>
-    <div class="card3-content">
-      <h3 class="work-title">Multy-Post Stories</h3>
-      <div class="clients">
-        <h4>CANOPY</h4>
-        <img class="img-clients" src="images/works/Counter.svg" alt="">
-        <h4 style="color: #6b778c">Back End Dev</h4>
-        <img class="img-clients" src="images/works/Counter.svg" alt="">
-        <h4 style="color: #6b778c">2015</h4>
-      </div>
-        <p class="highlights">
-          A daily selection of privately personalized reads no accounts for
-          sign-ups required.
-        </p> 
-
-        <ul class="taggs" style="list-style: none;">
-          <li><button class="tag1">html</button></li>
-          <li><button class="tag2">css</button></li>
-          <li><button class="tag3">javascript</button></li>
-        </ul>  
-
-        <button class="project-detail btn">See Project</button>
-    </div>
-  </section>
-</section>
 <!-- About myself section -->
 <section id="about-me" class="about-myself">
   <div class="about-myself-content">
@@ -203,7 +122,7 @@
       that you need built or a project that needs coding. I’d love to help
       with it
     </p>
-    <span id="error"></span>
+    <!-- <span id="error"></span> -->
     <form action="https://formspree.io/f/xgeqpzkb" method="POST" class="my-form" name="myForm">
       <input maxlength="30" type="text" name="name" placeholder="Full name" class="inputField" required>
       <input id= "email" type="email" name="email" placeholder="Email" class="inputField" required>

@@ -4,6 +4,10 @@
   left: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -61,7 +65,7 @@ body {
 }
 
 .hamburger > .closeIcon {
-  background: none;
+  background-color: none;
   color: white;
 }
 
@@ -104,6 +108,104 @@ body {
   padding-top: 2.2rem;
 }
 
+/* DETAIL PAGE  */
+
+.popup {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  position: sticky;
+  background: #fff;
+  top: 0;
+  padding: 1rem 1rem;
+  margin: 2rem 0.8rem;
+  border-radius: 10px;
+  height: 100%;
+  z-index: 2;
+}
+
+.popup-title {
+  margin: 0;
+}
+
+.close {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 50px;
+  left: 80%;
+  margin-top: -27px;
+}
+
+.popup.show {
+  display: flex;
+  transition-delay: 2s;
+}
+
+.popup-background {
+  display: none;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 104vh;
+  backdrop-filter: blur(10px);
+}
+
+.popup-background.show {
+  display: block;
+  background-color: #c1c7d0;
+  z-index: 0;
+}
+
+.popup-button {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  gap: 12px;
+}
+
+.pop-button {
+  width: 130px !important;
+  font-size: 12px;
+  gap: 6px;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.popup-text {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #344563;
+}
+
+.detail-tech {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.scroll-over {
+  overflow: hidden;
+}
+
+.popup-btn {
+  margin-top: -20px;
+}
+
+.card-popup-content {
+  margin-top: -20px;
+}
+
+.popup-image {
+  margin-top: -12px;
+}
+
+/* DETAIL PAGE  */
+
 .cover-socials a {
   text-decoration: none;
   font-size: 22px;
@@ -123,6 +225,11 @@ body {
 
 a:link {
   text-decoration: none;
+}
+
+.source-button a,
+.live-button a {
+  color: #6070ff !important;
 }
 
 #navbar .desktop-menu a:hover {
@@ -203,7 +310,6 @@ a:link {
 .card3-content {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .card2-content {
@@ -211,7 +317,7 @@ a:link {
   flex-direction: column;
 }
 
-.work-title {
+.work1-title {
   width: 295px;
   height: auto;
   font-style: normal;
@@ -246,7 +352,7 @@ h4 {
   padding: 5px;
 }
 
-.highlights {
+.project1-content {
   font-size: 15px;
   line-height: 24px;
   color: #344563;
@@ -271,6 +377,25 @@ h4 {
   color: #396df2;
   background: #fff;
   margin: 0.5rem 1rem 1.5rem;
+}
+
+.project-detail-popup {
+  width: 146px;
+  height: 48px;
+  border-width: 1px;
+  padding-left: 22px;
+  border-color: #396df2;
+  border-radius: 0.5em;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #396df2;
+  background: #fff;
 }
 
 .project-detail:hover {
@@ -305,29 +430,32 @@ div .taggs {
   height: 20px;
   border: none;
   border-radius: 6px;
-  margin-left: 0;
+  margin: 14px 0;
   color: #1a5fb4;
+  background: #ebebff;
   font-size: 12px;
 }
 
 .tag2 {
   width: 40px;
   height: 20px;
-  margin-right: 4px;
+  margin: 14px 4px 0 0;
   border: none;
   border-radius: 6px;
   color: #1a5fb4;
+  background: #ebebff;
   font-size: 12px;
 }
 
 .tag3 {
-  width: 60px;
+  width: 78px;
   height: 20px;
-  margin-right: 8px;
+  margin: 12px 8px 0 0;
   border: none;
   border-radius: 6px;
   color: #1a5fb4;
-  font-size: 12px;
+  background: #ebebff;
+  font-size: 14px;
 }
 
 /* ///////// About myself//////// */
@@ -551,6 +679,13 @@ div .taggs {
   color: #fff;
 }
 
+#project-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 500px) {
   #main-page {
     background-image: url(/images/desktop_main/Header.png);
@@ -686,7 +821,12 @@ div .taggs {
     transform: scale(1.07);
   }
 
-  .clients {
+  #project-section section:nth-child(even) .card1-content {
+    grid-row: 1/-2;
+    padding: 0;
+  }
+
+  .detail-tech {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -695,6 +835,8 @@ div .taggs {
     font-size: 13px;
     line-height: 16px;
     color: #7a869a;
+    margin: 0;
+    padding-top: 0;
   }
 
   div .taggs {
@@ -712,6 +854,7 @@ div .taggs {
     border-radius: 6px;
     margin-bottom: 20px;
     color: #1a5fb4;
+    background: #ebebff;
   }
 
   .tag2 {
@@ -721,6 +864,7 @@ div .taggs {
     border: none;
     border-radius: 6px;
     color: #1a5fb4;
+    background: #ebebff;
   }
 
   .tag3 {
@@ -730,7 +874,94 @@ div .taggs {
     border: none;
     border-radius: 6px;
     color: #1a5fb4;
+    background: #ebebff;
   }
+
+  /* DETAIL PAGE  */
+
+  .popup {
+    top: 20px;
+    width: 50%;
+    padding: 1rem;
+    margin: 2rem 0.8rem;
+    border-radius: 10px;
+    background: #fff;
+  }
+
+  .popup.show {
+    width: 70%;
+  }
+
+  .popup-title {
+    margin: 0;
+  }
+
+  .close {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 1rem;
+    left: 90%;
+    margin-top: 0;
+  }
+
+  .popup-image {
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+  }
+
+  .card-popup-content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+  }
+
+  .popup-btn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+
+  .live-button {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-image: url('/images/Icon.png');
+  }
+
+  .popup-detail-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pop-button {
+    width: 120px;
+    font-size: 12px;
+    gap: 6px;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  .popup-background {
+    display: none;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -1;
+  }
+
+  .popup-background.show {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+  }
+
+  /* DETAIL PAGE  */
 
   /* //////// About-myself-desktop//////// */
 
