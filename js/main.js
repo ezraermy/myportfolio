@@ -170,7 +170,7 @@ const pattern = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
 form.addEventListener('submit', (event) => {
   const isValid = pattern.test(email.value);
   if (!isValid) {
-    error.textContent = 'Please enter the email in lowercase.';
+    error.textContent = 'Please enter the email in lowercase and try agian.';
     error.style.color = 'red';
     event.preventDefault();
   } else {
