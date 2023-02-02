@@ -7,7 +7,7 @@ const menuIcon = document.querySelector('.menuIcon');
 // popup detial window
 const appProjects = [
   {
-    title: 'First Project',
+    title: 'First Project'
     picture: 'images/works/tonic/Cover1.svg',
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley',
     tech: ['html', 'css', 'javascript'],
@@ -34,7 +34,7 @@ const appProjects = [
 
 const allProjects = document.querySelector('#project-section');
 
-for (let i = 0; i < appProjects.length; i += 1) {
+for (let i = 0; i < appProjects.length; i++) {
   const card = `<section id="card1-page" class="work-page-right">
   <div class="card1-image">
     <img id="project1-image" src="${appProjects[i].picture}" alt="Poster for tonic app" style="width: 100%;" />
