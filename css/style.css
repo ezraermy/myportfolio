@@ -65,7 +65,7 @@ body {
 }
 
 .hamburger > .closeIcon {
-  background-color: none;
+  background: none;
   color: white;
 }
 

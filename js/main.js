@@ -17,17 +17,17 @@ const appProjects = [
     title: 'Second Project',
     picture: 'images/works/multi_post_story/Cover.svg',
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley',
-    tech: ["html", "css", "javascript"],
-    live: '<a href="#">See Live <img src="images/live.svg" alt=""></a>',
-    source: '<a href="#">See Source <img src="images/Vector.svg" alt=""></a>',
+    tech: ['html', 'css', 'javascript'],
+    live: '<a href="https://www.link_to_live_version.com">See Live <img src="images/live.svg" alt=""></a>',
+    source: '<a href="https://www.link_to_source_version.com">See Source <img src="images/Vector.svg" alt=""></a>',
   },
   {
     title: 'Third Project',
     picture: 'images/works/tonic/Cover1.svg',
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley',
-    tech: ["html", "css", "javascript"],
-    live: '<a href="#">See Live <img src="images/live.svg" alt=""></a>',
-    source: '<a href="#">See Source <img src="images/Vector.svg" alt=""></a>',
+    tech: ['html', 'css', 'javascript'],
+    live: '<a href="https://www.link_to_live_version.com">See Live <img src="images/live.svg" alt=""></a>',
+    source: '<a href="https://www.link_to_source_version.com">See Source <img src="images/Vector.svg" alt=""></a>',
   },
 ];
 
@@ -94,9 +94,7 @@ const popBg = document.querySelector('.popup-background');
 
 const pop = document.querySelector('.popup');
 
-const html = document.querySelector('html')
-
-const hide = document.querySelector('hide')
+const html = document.querySelector('html');
 
 function showPopup() {
   popBg.classList.add('show');
