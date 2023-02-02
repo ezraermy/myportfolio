@@ -177,4 +177,3 @@ form.addEventListener('submit', (event) => {
     error.textContent = '';
   }
 });
-
