@@ -4,6 +4,7 @@ const hamburger = document.querySelector('.hamburger');
 const closeIcon = document.querySelector('.closeIcon');
 const menuIcon = document.querySelector('.menuIcon');
 
+// popup detial window
 const appProjects = [
   {
     title: 'First Project',
@@ -142,6 +143,7 @@ close.addEventListener('click', () => {
   html.classList.remove('scroll-stop');
 });
 
+// mobile menu
 function toggleMenu() {
   if (menu.classList.contains('showMenu')) {
     menu.classList.remove('showMenu');
@@ -162,6 +164,7 @@ menuItems.forEach(
   },
 );
 
+// contact form validation
 const email = document.querySelector('#email');
 const form = document.querySelector('.my-form');
 const error = document.querySelector('#error');
@@ -177,3 +180,39 @@ form.addEventListener('submit', (event) => {
     error.textContent = '';
   }
 });
+
+// Save data in the local storage
+const formId = 'my-form';
+const url = window.location.href;
+const formIdentifier = `${url} ${formId}`;
+const saveButton = document.querySelector('#my-form');
+const myForm = document.querySelector(`#${formId}`);
+const formElements = myForm.elements;
+
+let data = { [formIdentifier]: {} };
+const getFormData = () => {
+  Object.values(formElements).forEach((element) => {
+    if (element.name.length > 0) {
+      data[formIdentifier][element.name] = element.value;
+    }
+  });
+  return data;
+};
+
+saveButton.onchange = (event) => {
+  event.preventDefault();
+  data = getFormData();
+  localStorage.setItem(formIdentifier, JSON.stringify(data[formIdentifier]));
+};
+
+const populateForm = () => {
+  if (localStorage.key(formIdentifier)) {
+    const savedData = JSON.parse(localStorage.getItem(formIdentifier));
+    Object.values(formElements).forEach((element) => {
+      if (element.name in savedData) {
+        element.value = savedData[element.name];
+      }
+    });
+  }
+};
+document.onload = populateForm();
