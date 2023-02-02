@@ -199,11 +199,11 @@ const getFormData = () => {
   return data;
 };
 
-saveButton.onchange = (event) => {
+saveButton.addEventListener('keyup', (event) => {
   event.preventDefault();
   data = getFormData();
   localStorage.setItem(formIdentifier, JSON.stringify(data[formIdentifier]));
-};
+});
 
 const populateForm = () => {
   if (localStorage.key(formIdentifier)) {
