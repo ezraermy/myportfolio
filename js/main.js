@@ -10,8 +10,8 @@ const appProjects = [
     picture: 'images/works/tonic/Cover1.svg',
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley',
     tech: ['html', 'css', 'javascript'],
-    live: '<a href= "https://www.link_to_live_version.com">See Live <img src="images/live.svg" alt=""></a>',
-    source: '<a href = "https://www.link_to_source_version.com">See Source <img src="images/Vector.svg" alt=""></a>',
+    live: '<a href="https://www.link_to_live_version.com"> See Live <img src="images/live.svg" alt="">',
+    source: '<a href="https://www.link_to_source_version.com">See Source <img src="images/Vector.svg" alt=""></a>',
   },
   {
     title: 'Second Project',
@@ -91,13 +91,15 @@ popupDetail.innerHTML = `
       </div>`;
 
 const popBg = document.querySelector('.popup-background');
+
 const pop = document.querySelector('.popup');
+
 const html = document.querySelector('html');
 
 function showPopup() {
   popBg.classList.add('show');
   pop.classList.add('show');
-  html.classList.add('scroll-over');
+  html.classList.add('scroll-stop');
 }
 
 const card1 = document.querySelector('#card0-btn');
@@ -137,7 +139,7 @@ const close = document.querySelector('.close');
 close.addEventListener('click', () => {
   popBg.classList.remove('show');
   pop.classList.remove('show');
-  html.classList.remove('scroll-over');
+  html.classList.remove('scroll-stop');
 });
 
 function toggleMenu() {
@@ -159,3 +161,19 @@ menuItems.forEach(
     menuItem.addEventListener('click', toggleMenu);
   },
 );
+
+const email = document.querySelector('#email');
+const form = document.querySelector('.my-form');
+const error = document.querySelector('#error');
+const pattern = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+
+form.addEventListener('submit', (event) => {
+  const isValid = pattern.test(email.value);
+  if (!isValid) {
+    error.innerHTML = `Please enter the email in lowercase and try using this one instead <strong>${email.value.toLowerCase()}</strong>`;
+    error.style.color = 'red';
+    event.preventDefault();
+  } else {
+    error.textContent = '';
+  }
+});
