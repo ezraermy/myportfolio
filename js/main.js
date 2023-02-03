@@ -173,7 +173,7 @@ const pattern = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
 form.addEventListener('submit', (event) => {
   const isValid = pattern.test(email.value);
   if (!isValid) {
-    error.textContent = 'Please enter the email in lowercase.';
+    error.innerHTML = `Please enter the email in lowercase and try using this one instead <strong>${email.value.toLowerCase()}</strong>`;
     error.style.color = 'red';
     event.preventDefault();
   } else {
@@ -199,11 +199,11 @@ const getFormData = () => {
   return data;
 };
 
-saveButton.onchange = (event) => {
+saveButton.addEventListener('keyup', (event) => {
   event.preventDefault();
   data = getFormData();
   localStorage.setItem(formIdentifier, JSON.stringify(data[formIdentifier]));
-};
+});
 
 const populateForm = () => {
   if (localStorage.key(formIdentifier)) {
