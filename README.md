@@ -87,7 +87,7 @@ In order to run this project you need to:
 Clone the repo into your local machine:
 
 ```bash
-git clone https://github.com/PabloEGonz/full-stack-capstone-front-end
+git clone https://github.com/ezraermy/myportfolio
 ```
 
 Install the dependencies:
