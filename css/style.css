@@ -574,6 +574,7 @@ div .taggs {
   justify-content: space-between;
   padding: 0 0.5rem;
   margin: 1em;
+  list-style: none;
 }
 
 .greater-tag {
