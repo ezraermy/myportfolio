@@ -1,0 +1,62 @@
+/* Contact Section */
+.contact {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+}
+
+.contact-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-content {
+  font-size: 18px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #555;
+}
+
+.inputField,
+.textareaField {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #555;
+  background-color: #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.textareaField {
+  height: 200px;
+}
+
+.my-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.my-button:hover {
+  background-color: #2980b9;
+}
+
+#error {
+  display: block;
+  color: red;
+  margin-bottom: 20px;
+  font-size: 16px;
+}

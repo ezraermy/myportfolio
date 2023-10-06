@@ -8,27 +8,27 @@ const menuIcon = document.querySelector('.menuIcon');
 const appProjects = [
   {
     title: 'First Project',
-    picture: 'images/works/tonic/Cover1.svg',
+    picture: 'images/works/web-dev.png',
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley',
     tech: ['html', 'css', 'javascript'],
-    live: '<a href="https://www.link_to_live_version.com"> See Live <img src="images/live.svg" alt="">',
-    source: '<a href="https://www.link_to_source_version.com">See Source <img src="images/Vector.svg" alt=""></a>',
+    live: '<a href="https://www.loom.com/share/6c08527d71ef4c6e853b63d1c28980cf"> See Live <img src="images/live.svg" alt="">',
+    source: '<a href="https://github.com/ezraermy/youcode-web-dev-courses">See Source <img src="images/Vector.svg" alt=""></a>',
   },
   {
     title: 'Second Project',
     picture: 'images/works/multi_post_story/Cover.svg',
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley',
     tech: ['html', 'css', 'javascript'],
-    live: '<a href="https://www.link_to_live_version.com">See Live <img src="images/live.svg" alt=""></a>',
-    source: '<a href="https://www.link_to_source_version.com">See Source <img src="images/Vector.svg" alt=""></a>',
+    live: '<a href="https://github.com/ezraermy/youcode-web-dev-courses">See Live <img src="images/live.svg" alt=""></a>',
+    source: '<a href="https://github.com/ezraermy/youcode-web-dev-courses">See Source <img src="images/Vector.svg" alt=""></a>',
   },
   {
     title: 'Third Project',
     picture: 'images/works/tonic/Cover1.svg',
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley',
     tech: ['html', 'css', 'javascript'],
-    live: '<a href="https://www.link_to_live_version.com">See Live <img src="images/live.svg" alt=""></a>',
-    source: '<a href="https://www.link_to_source_version.com">See Source <img src="images/Vector.svg" alt=""></a>',
+    live: '<a href="https://github.com/ezraermy/youcode-web-dev-courses">See Live <img src="images/live.svg" alt=""></a>',
+    source: '<a href="https://github.com/ezraermy/youcode-web-dev-courses">See Source <img src="images/Vector.svg" alt=""></a>',
   },
 ];
 
