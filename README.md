@@ -84,14 +84,17 @@ In order to run this project you need to:
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone the repo into your local machine:
 
-- Choose a directory
-- Open a Terminal
-- write: git clone https://github.com/ezraermy/ezra_portfolio/edit/portfolio_mobile_projects
-- get into to directory "portfolio_mobile_mainpage"
-- write: npm install
+```bash
+git clone https://github.com/PabloEGonz/full-stack-capstone-front-end
+```
 
+Install the dependencies:
+
+```bash
+npm install
+```
 ### Install
 
 Install this project with linters:
